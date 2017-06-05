@@ -39,7 +39,7 @@ app.get('/', (req, res) => {
 })
 
 //blog post
-app.get('post/:id', (req, res) =>{
+app.get('post/:id', (req, res) => {
     //find the post in the 'posts' array 
     const post = posts.filter((post) => {
         return post.id == req.params.id
